@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth; /* Comportement du défilement pour une boîte de défilement */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    /* Variable de couleur */
+    --second-bg-color: #323946;
+    /* Variable de couleur */
+    --text-color: #fff;
+    /* Variable de couleur */
+    --main-color: #0ef;
+    /* Variable de couleur */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* PARTIE " HEADER " */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.navbar.active {
+    display: block;
+}
+
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+
+/*---------------------------
+|  PARTIE CORPS DE LA PAGE  |
+---------------------------*/
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+span {
+    color: var(--main-color);
+}
+
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+/*---------------------------------- 
+|  LIENS VERS LES RESEAUX SOCIAUX  |
+----------------------------------*/
+
+.social-media a {
+    height: 4rem;
+    width: 4rem;
+    display: inline-flex;
+    justify-content: center;
+    margin: 3rem 2.5rem 3rem 0;
+    padding-top: 7px; /* Centre les icons dans le cercle */
+    font-size: 2rem;
+    color: var(--main-color);
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+
+/*------------------------
+|    BOUTON POUR LE CV   |
+------------------------*/
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+
+/*------------------------
+|         FOOTER         |
+------------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+
+
+
+

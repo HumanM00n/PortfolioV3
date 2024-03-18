@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    /* Variable de couleur */
+    --second-bg-color: #323946;
+    /* Variable de couleur */
+    --text-color: #fff;
+    /* Variable de couleur */
+    --main-color: #0ef;
+    /* Variable de couleur */
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    bottom: 90px;
+    background: var(--bg-color);
+}
+
+.about-content p {
+    font-size: 1.6rem;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+    margin: 2rem 0 3rem;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 140px;
+    right: 110px;
+}
+
+.personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.personal-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--second-bg-color);
+}
+
+.personal-info .info-item p span {
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.padd-15:nth-child(5) {
+    position: relative;
+    /* right: 278px; Ecran Pc Portbale */
+    right: 312px; /*Ecran Pc Taff/Ecole*/
+}
+
+
+.btn {
+    display: inline-block;
+    position: relative;
+    /*right: 27em; Ecran Pc Portbale */
+    right: 31em; /*Ecran Pc Taff/Ecole*/
+    margin: 4rem 0;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}

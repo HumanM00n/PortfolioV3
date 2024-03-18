@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    /* Comportement du défilement pour une boîte de défilement */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    /* Variable de couleur */
+    --second-bg-color: #323946;
+    /* Variable de couleur */
+    --text-color: #fff;
+    /* Variable de couleur */
+    --main-color: #0ef;
+    /* Variable de couleur */
+}
+
+
+.skills {
+    min-height: auto;
+    padding-bottom: 39rem;
+    background: var(--second-bg-color);
+}
+
+.heading {
+    position: relative;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.skills h2 {
+    display: inline-block;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 18rem;
+    margin-bottom: 5rem;
+    font-size: 1.3rem;
+}
+
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+}
+
+
+.skills-column h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px; 
+}
+
+.skills-column .skills-box {
+    position: relative;
+}
+
+.skills-box .skills-content {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.skills-box .skills-content .text-content {
+    font-size: 1.5rem;
+}
+
+.skills-box .skills-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.skills-box .skills-content:hover::before {
+    width: 100%;
+}
+
+
+.skills-content .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*------------------------
+|         FOOTER         |
+------------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
