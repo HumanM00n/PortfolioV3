@@ -30,6 +30,12 @@
     background: var(--bg-color);
 }
 
+.about-content {
+    margin-top: 0;
+    position: relative;
+    bottom: 50px;
+}
+
 .about-content p {
     font-size: 1.6rem;
 }
@@ -58,8 +64,8 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    bottom: 140px;
-    right: 110px;
+    bottom: 170px;
+    right: 125px;
 }
 
 .personal-info {
@@ -95,16 +101,16 @@
 
 .padd-15:nth-child(5) {
     position: relative;
-    /* right: 278px; Ecran Pc Portbale */
-    right: 312px; /*Ecran Pc Taff/Ecole*/
+   /* right: 278px; Ecran Pc Portbale*/
+    right: 315px; /* Ecran pc Taff/Ecole */
 }
 
 
 .btn {
     display: inline-block;
     position: relative;
-    /*right: 27em; Ecran Pc Portbale */
-    right: 31em; /*Ecran Pc Taff/Ecole*/
+    right: 25em; /* Ecran Pc Portbale */
+    /*right: 27em; Ecran Pc Taff/Ecole */
     margin: 4rem 0;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -119,4 +125,47 @@
 
 .btn:hover {
     box-shadow: none;
+}
+
+
+.about .about-content .personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item:nth-child(3) {
+    position: relative;
+    left: 30px;
+}
+
+
+.about .about-content .personal-info .info-item p span {
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+
+
+.about .about-content .personal-info .buttons {
+    margin-top: 30px;
+}
+
+
+.about .about-content .personal-info .buttons .btn {
+    margin-top: 10px;
 }
