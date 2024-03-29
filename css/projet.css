@@ -71,9 +71,21 @@ span {
 .portfolio-box .logoTmaconnect {
     width: 100%;
     position: relative;
-    left: 25px;
+    right: 15px;
 }
 
+
+.portfolio-box .LogoVueJs {
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.portfolio-box .LogoVueJsCadre {
+    width: 100%;
+    position: relative;
+    left: 0;
+}
 
 .portfolio-box .portfolio-layer {
     width: 100%;
