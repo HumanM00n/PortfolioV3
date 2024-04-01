@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    /* Variable de couleur */
+    --second-bg-color: #323946;
+    /* Variable de couleur */
+    --text-color: #fff;
+    /* Variable de couleur */
+    --main-color: #0ef;
+    /* Variable de couleur */
+}
+
+
+section {
+    min-height: 58vh;
+}
+
+
+.company {
+    min-height: auto;
+    padding-bottom: 39rem;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+
+.heading {
+    position: relative;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.company h2 {
+    display: inline-block;
+    transform: translateX(-50%);
+    left: 3%;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 4.5%;
+    margin-bottom: 5rem;
+    font-size: 1.3rem;
+}
+
+
+.company .company-row {
+    width: 185rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+.company-row .company-column {
+    flex: 1 1 40rem;
+}
+
+
+.company-column h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.company-column .company-box {
+    position: relative;
+}
+
+.company-box .company-content {
+    position: relative;
+    padding: 25px 10 25px 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.company-box .company-content .text-content {
+    font-size: 1.8rem;
+}
+
+.company-box .company-content:hover::before {
+    width: 100%;
+}
+
+
+.company-content .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*------------------------
+|         PROJETS        |
+------------------------*/
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio h2 {
+    position: relative;
+    left: 73rem;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+    left: 35px;
+}
+
+
+.portfolio-container .portfolio-box {
+    width: 100%;
+    height: 37rem;
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    background-image: url('../media/backgroundProjet.jpg');
+}
+
+.portfolio-box img {
+    width: 75%;
+    position: relative;
+    left: 50px;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box .logoTmaconnect {
+    width: 100%;
+    position: relative;
+    right: 15px;
+}
+
+.portfolio-box .portfolio-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+
+/*------------------------
+|     DEUXIEME BLOC      |
+------------------------*/
+
+
+
+.portfolio-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+    left: 85rem;
+    bottom: 37em;
+}
+
+
+.portfolio-container2 .portfolio-box2 {
+    width: 100%;
+    height: 37rem;
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    background-image: url('../media/backgroundProjet.jpg');
+}
+
+.portfolio-box2 img {
+    width: 75%;
+    position: relative;
+    left: 50px;
+    transition: .5s ease;
+}
+
+.portfolio-box2:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box2 .logoTmaconnect {
+    width: 100%;
+    position: relative;
+    right: 15px;
+}
+
+.portfolio-box2 .portfolio-layer2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box2:hover .portfolio-layer2 {
+    transform: translateY(0);
+}
+
+
+.portfolio-layer2 h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer2 p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer2 a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+
+/*------------------------
+|         FOOTER         |
+------------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
