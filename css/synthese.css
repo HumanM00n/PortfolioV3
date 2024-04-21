@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    /* Variable de couleur */
+    --second-bg-color: #323946;
+    /* Variable de couleur */
+    --text-color: #fff;
+    /* Variable de couleur */
+    --main-color: #0ef;
+    /* Variable de couleur */
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.portfolio {
+    background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+
+.portfolio-container .portfolio-box {
+    width: 100%;
+    height: 37rem;
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    background-image: url('../media/backgroundProjet.jpg');
+}
+
+
+/* .portfolio-box img {
+    width: 75%;
+    position: relative;
+    left: 50px;
+    transition: .5s ease;
+}  */
+
+.portfolio-box img {
+    width: 75%;
+    position: relative;
+    left: 50px;
+    transition: .5s ease;
+    height: 258px;
+    top: 35px;
+  }
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+/* CLASS POUR LES IMG  */
+
+.portfolio-box .logoHtml {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+.portfolio-box .logoCSS {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+.portfolio-box .LogoPHP {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+
+.portfolio-box .logoJS {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+
+.portfolio-box .logoSQL {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+
+
+.portfolio-box .LogoCsharp {
+    width: 250px;
+    position: relative;
+    left: 120px;
+} 
+
+
+
+.portfolio-box .LogoLaravel {
+    width: 250px;
+    position: relative;
+    left: 120px;
+} 
+
+
+.portfolio-box .LogoVueJs {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+.portfolio-box .LogoLaravel {
+    width: 250px;
+    position: relative;
+    left: 120px;
+}
+
+.portfolio-box .portfolio-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.row {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 16px;
+}
+
+
+.portfolio .btn {
+    margin-top: 40px;
+}
+
+/*------------------------
+|         FOOTER         |
+------------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+
