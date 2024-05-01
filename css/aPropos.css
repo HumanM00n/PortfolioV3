@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-top: 6rem;
     position: relative;
     bottom: 90px;
     background: var(--bg-color);
@@ -38,6 +39,7 @@
 
 .about-content p {
     font-size: 1.6rem;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -57,27 +59,14 @@
     margin: 2rem 0 3rem;
 }
 
+/*********************
+|   EMPLOIE SOUHAITE | 
+**********************/
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 170px;
-    right: 110px;
+.padd-15 {
+    padding-right: 15px;
 }
 
-.personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
-    margin-top: 40px;
-}
-
-.personal-info .info-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
 
 .personal-info .info-item p {
     font-weight: 600;
@@ -85,34 +74,28 @@
     font-size: 16px;
     color: var(--text-color);
     border-bottom: 1px solid var(--second-bg-color);
+    width: 25%;
 }
 
-.personal-info .info-item p span {
+.about .about-content .personal-info .info-item p span {
     font-weight: 400;
     color: var(--text-black-700);
     margin-left: 4px;
-    display: inline-block;
+    display: inline-flex;
 }
 
-.padd-15 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.padd-15:nth-child(5) {
-    position: relative;
-   /* right: 278px; Ecran Pc Portbale*/
-   /* right: 315px;  Ecran pc Taff/Ecole */
-    /*right: 285px;  Ecran pc home */
-}
+/*********************
+|       BOUTONS      | 
+**********************/
 
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    right: 25em; /* Ecran Pc Portbale */
-    /*right: 27em; Ecran Pc Taff/Ecole */
-    margin: 4rem 0;
+    margin: 3rem 0;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
@@ -124,45 +107,14 @@
     transition: .5s;
 }
 
+
+
 .btn:hover {
     box-shadow: none;
 }
 
 
-.about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
-    margin-top: 40px;
-}
-
-.about .about-content .personal-info .info-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.about .about-content .personal-info .info-item p {
-    font-weight: 600;
-    padding: 10px 0;
-    font-size: 16px;
-    color: var(--text-black-900);
-    border-bottom: 1px solid var(--bg-black-50);
-}
-
-/* .about .about-content .personal-info .info-item:nth-child(3) {
-    position: relative;
-    left: 30px;
-} */
-
-
-.about .about-content .personal-info .info-item p span {
-    font-weight: 400;
-    color: var(--text-black-700);
-    margin-left: 4px;
-    display: inline-block;
-}
-
-
-.about .about-content .personal-info .buttons {
+/* .about .about-content .personal-info .buttons {
     margin-top: 30px;
 }
 
@@ -172,15 +124,8 @@
 
 }
 
-#buttonGroup {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 55px;
-}
-
 .buttons a:last-child {
     margin-left: 5px;
-}
+} */
 
 
