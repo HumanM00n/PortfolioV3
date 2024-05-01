@@ -186,13 +186,6 @@ span {
     color: var(--second-bg-color);
 }
 
-.row {
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
 .section-title {
     text-align: center;
@@ -210,6 +203,27 @@ span {
 
 .portfolio .btn {
     margin-top: 40px;
+}
+
+/*--------------------
+|       BOUTONS      | 
+---------------------*/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 3rem 0;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s;
 }
 
 /*------------------------

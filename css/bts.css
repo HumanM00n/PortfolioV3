@@ -25,8 +25,8 @@
 
 
 .skills {
-    min-height: auto;
-    padding-bottom: 39rem;
+    min-height: 93vh;
+    padding: 10rem 9% 2rem;
     background: var(--second-bg-color);
 }
 
@@ -109,6 +109,27 @@
     font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
+}
+
+.skills-box .skills-content .text-content .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-media a {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 2.5rem 3rem 0;
+    padding-top: 7px; /* Centre les icons dans le cercle */
+    font-size: 2rem;
+    color: var(--main-color);
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    transition: .5s ease;
 }
 
 

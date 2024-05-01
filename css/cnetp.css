@@ -19,15 +19,9 @@
     /* Variable de couleur */
 }
 
-
-section {
-    min-height: 58vh;
-}
-
-
 .company {
-    min-height: auto;
-    padding-bottom: 39rem;
+    min-height: 93vh;
+    padding: 10rem 9% 2rem;
     background: var(--second-bg-color);
     text-align: center;
 }
@@ -42,14 +36,14 @@ section {
 .company h2 {
     display: inline-block;
     transform: translateX(-50%);
-    left: 3%;
+    left: 75px;
 }
 
 .intro-content {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 4.5%;
+    left: 100px;
     margin-bottom: 5rem;
     font-size: 1.3rem;
 }
@@ -101,201 +95,26 @@ section {
 }
 
 
-/*------------------------
-|         PROJETS        |
-------------------------*/
+/* BOUTON REDICRECTION VERS LA CAISSE */
 
-.portfolio {
-    display: flex;
-    flex-direction: column;
-}
-
-.portfolio h2 {
-    position: relative;
-    left: 52rem;
-    text-align: center;
-    font-size: 4.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 4rem;
-}
-
-
-.portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-    position: relative;
-    left: 35px;
-}
-
-
-.portfolio-container .portfolio-box {
-    width: 100%;
-    height: 37rem;
-    position: relative;
-    display: flex;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    background-image: url('../media/backgroundProjet.jpg');
-}
-
-.portfolio-box img {
-    width: 75%;
-    position: relative;
-    left: 50px;
-    transition: .5s ease;
-}
-
-.portfolio-box:hover img {
-    transform: scale(1.1);
-}
-
-.portfolio-box .logoTmaconnect {
-    width: 100%;
-    position: relative;
-    right: 15px;
-}
-
-.portfolio-box .portfolio-layer {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.company-box .company-content .text-content .social-media {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+    height: 35rem;
 }
 
-.portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-}
-
-
-.portfolio-layer h4 {
-    font-size: 3rem;
-}
-
-.portfolio-layer p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
-
-.portfolio-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-.portfolio-layer a i {
+.social-media a {
+    height: 30rem;
+    width: 37rem;
+    margin: 3rem 2.5rem 3rem 0;
+    padding-top: 7px; /* Centre les icons dans le cercle */
     font-size: 2rem;
-    color: var(--second-bg-color);
-}
-
-
-/*------------------------
-|     DEUXIEME BLOC      |
-------------------------*/
-
-
-
-.portfolio-container2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-    position: relative;
-    left: 85rem;
-    bottom: 37em;
-}
-
-
-.portfolio-container2 .portfolio-box2 {
-    width: 100%;
-    height: 37rem;
-    position: relative;
-    display: flex;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    background-image: url('../media/backgroundProjet.jpg');
-}
-
-.portfolio-box2 img {
-    width: 75%;
-    position: relative;
-    left: 50px;
-    transition: .5s ease;
-}
-
-.portfolio-box2:hover img {
-    transform: scale(1.1);
-}
-
-.portfolio-box2 .logoTmaconnect {
-    width: 100%;
-    position: relative;
-    right: 15px;
-}
-
-.portfolio-box2 .portfolio-layer2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.portfolio-box2:hover .portfolio-layer2 {
-    transform: translateY(0);
-}
-
-
-.portfolio-layer2 h4 {
-    font-size: 3rem;
-}
-
-.portfolio-layer2 p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
-
-.portfolio-layer2 a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
+    color: var(--main-color);
+    background: transparent;
+    border: .2rem solid var(--main-color);
     border-radius: 50%;
+    transition: .5s ease;
 }
-
-.portfolio-layer2 a i {
-    font-size: 2rem;
-    color: var(--second-bg-color);
-}
-
 
 /*------------------------
 |         FOOTER         |
