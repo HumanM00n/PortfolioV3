@@ -209,12 +209,13 @@ span {
 |       BOUTONS      | 
 ---------------------*/
 
-.btn {
+.btn-box {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 3rem 0;
+}
+
+.btn {
+    display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
