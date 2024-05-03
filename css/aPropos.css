@@ -95,13 +95,8 @@ section {
 |       BOUTONS      | 
 ---------------------*/
 
-
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 3rem 0;
+    display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
@@ -113,25 +108,9 @@ section {
     transition: .5s;
 }
 
-
-
 .btn:hover {
     box-shadow: none;
 }
 
-
-/* .about .about-content .personal-info .buttons {
-    margin-top: 30px;
-}
-
-
-.about .about-content .personal-info .buttons .btn {
-    margin-top: 10px;
-
-}
-
-.buttons a:last-child {
-    margin-left: 5px;
-} */
 
 
