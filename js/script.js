@@ -20,7 +20,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .about-content h2, .portfolio h2, .contact h2, .portfolio .text-content p', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .about-content h2, .portfolio h2, .contact h2, .portfolio .text-content p, .portfolio h3', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .portfolio-box2, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-content h1, .about-img, .personal-info.padd-15', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
