@@ -56,7 +56,7 @@ span {
 }
 
 .portfolio .text-content p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 
@@ -68,12 +68,12 @@ span {
 
 .portfolio .text-sujet h2 {
     font-size: 2.5rem;
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 
 .portfolio .text-sujet p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: inline;
     margin-bottom: 3rem;
 }
@@ -186,6 +186,28 @@ span {
     font-size: 2rem;
     color: var(--second-bg-color);
     text-decoration: none;
+}
+
+/*------------------------
+|      INFOS RECOLTE     |
+------------------------*/
+
+.containerTreatment{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.infosTreatment h2{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.infosTreatment p {
+    font-size: 1.7rem;
 }
 
 
