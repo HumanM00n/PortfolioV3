@@ -76,9 +76,9 @@ span {
 
 
 .portfolio-box .LogoVueJs {
-    width: 100%;
+    width: 75%;
     position: relative;
-    left: 0;
+    left: 75px;
 }
 
 .portfolio-box .LogoVueJsCadre {
